@@ -15,6 +15,6 @@ public class Sound : MonoBehaviour
     public void PlaySound()
     {
         _audio.pitch = Random.Range(_pitchMinValue, _pitchMaxValue);
-        _audio.Play();
+        _audio.PlayOneShot(_audio.clip);
     }
 }
